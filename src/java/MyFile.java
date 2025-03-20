@@ -3,8 +3,21 @@ package src.java;
 // Import the File class from the java.io package
 import java.io.File;
 
+
     // Define a public class named MyFile
     public class MyFile {
+        private static File file;
+
+        // Constructor to initialize file with the given name
+        public MyFile(String myFile) {
+            this.file = new File("my-file.txt");
+        }
+
+        // Method to get the file object
+        public static File getFile() {
+            return file;
+        }
+
         // Main method: entry point of the program
         public static void main(String[] args) {
             // Create a File object representing the user's home directory

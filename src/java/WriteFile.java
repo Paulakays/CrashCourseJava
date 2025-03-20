@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class WriteFile {
     public static void main(String[] args) {
-        //Initialise new MyFile
+        //Initialise new file
         MyFile myFile = new MyFile("my-file.txt");
 
         //Check if a new file has been created
@@ -28,6 +28,7 @@ public class WriteFile {
         }
             //use catch to define code to be executed if an error occurs during trial
             catch(IOException e){
+
                 //print out error
             System.out.println("Error has occurred.");
             e.printStackTrace();
