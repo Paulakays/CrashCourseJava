@@ -5,18 +5,6 @@ import java.io.File;
 
     // Define a public class named MyFile
     public class MyFile {
-        private static File file;
-
-        //create a method MyFile to enable access of the file to Write.File.java
-        public MyFile(String filename) {
-            this.file = new File("my-file.txt");
-        }
-
-        //Create method getFile to enable access to Write.File.java
-        public static File getFile() {
-            return file;
-        }
-
         // Main method: entry point of the program
         public static void main(String[] args) {
             // Create a File object representing the user's home directory
