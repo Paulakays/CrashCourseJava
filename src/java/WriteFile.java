@@ -6,7 +6,7 @@ import java.io.IOException;
 
 
 public class WriteFile {
-    public static void main(String[] args) {
+    public static void  NewWriteFile(){
         //Initialise new file
         MyFile myFile = new MyFile("my-file.txt");
 
@@ -34,5 +34,6 @@ public class WriteFile {
             e.printStackTrace();
         }
         }
+
     }
-}
+    }

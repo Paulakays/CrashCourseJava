@@ -2,9 +2,10 @@ package src.java;
 
 // Import the File class from the java.io package
 import java.io.File;
+import java.io.IOException;
 
 
-    // Define a public class named MyFile
+// Define a public class named MyFile
     public class MyFile {
         private static File file;
 
@@ -20,6 +21,9 @@ import java.io.File;
 
         // Main method: entry point of the program
         public static void main(String[] args) {
+
+
+
             // Create a File object representing the user's home directory
             File home = new File(System.getProperty("user.home"));
 
@@ -43,6 +47,8 @@ import java.io.File;
                 // Print an error message if home is not a directory
                 System.out.println("The path specified is not a Directory.");
             }
+
+
         }
 
 }

@@ -15,7 +15,8 @@ More info - https://www.programiz.com/java-programming/exceptions
  */
 
 public class CreateFile {
-    public static void main (String[] args) {
+    public static void main (String[]args) throws IOException {
+
         //5. Handling Exception(try...catch)
         try{
             //3. Create File “my-file.txt”
@@ -23,11 +24,14 @@ public class CreateFile {
 
             if(obj.createNewFile()){
                 System.out.println("File created: " + obj.getName());
-            }else {
             }
         }catch (IOException e){
             System.out.println("Error has occurred.");
             e.printStackTrace();
         }
+
+        //Calling methods
+        WriteFile.NewWriteFile();
+        FileWriteReader.NewFileWriteReader();
     }
 }
