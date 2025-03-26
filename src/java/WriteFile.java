@@ -33,7 +33,10 @@ public class WriteFile {
             System.out.println("Error has occurred.");
             e.printStackTrace();
         }
+        }else{
+            System.out.println("File does not exist.");
         }
+
 
     }
     }
