@@ -6,7 +6,7 @@ import java.io.IOException;
 
 
 public class WriteFile {
-    public static void main(String[] args) {
+    public static void  NewWriteFile(){
         //Initialise new file
         MyFile myFile = new MyFile("my-file.txt");
 
@@ -33,7 +33,10 @@ public class WriteFile {
             System.out.println("Error has occurred.");
             e.printStackTrace();
         }
+        }else{
+            System.out.println("File does not exist.");
         }
+
 
     }
     }

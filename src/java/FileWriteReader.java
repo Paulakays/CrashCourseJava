@@ -4,7 +4,7 @@ import java.io.*;
 
 public class FileWriteReader {
 
-    public static void main(String[] args) throws IOException {
+    public static void NewFileWriteReader() throws IOException {
 
         //Create a FileReader defined String
         String fileName = "my-file.txt";
@@ -16,21 +16,21 @@ public class FileWriteReader {
         int i;
 
         // Read from the file until the end (i.e., when read() returns -1)
-        while ((i = reader.read()) != -1){
+        while ((i = reader.read()) != -1) {
 
             // Print each character as it is read
-            System.out.print((char)i);
+            System.out.print((char) i);
 
         }
         //9.Close the Reader
         reader.close();
 
-
-
     }
 
 
 }
+
+
 
 
 
